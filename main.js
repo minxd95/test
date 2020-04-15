@@ -54,7 +54,7 @@ app.get("/board", (req, res, next) => {
   });
 });
 app.get("/board/:id", (req, res, next) => {
-  db.query(`SELECT * FROM test WHERE id=?`, id, (err, result) => {
+  db.query(`SELECT * FROM test WHERE id=?`, req.query.id, (err, result) => {
     if (err) next(err);
     res.json({
       id: result[0].id,
