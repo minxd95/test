@@ -4,9 +4,9 @@ const cors = require("cors");
 
 const app = express();
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "111111",
+  host: "nsmserver.cyrhjobbyiec.us-east-2.rds.amazonaws.com",
+  user: "admin",
+  password: "a1234567890",
   database: "test",
 });
 
